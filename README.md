@@ -1,83 +1,69 @@
 # wow_macros
 Выкладка макросов WOW
 
-#showtooltip Кровопускание
-/cast [stance:3] Боевая стойка
-/cast [stance:1] Кровопускание
-
-#showtooltip Ярость берсерка
-/закл Стойка берсерка
-/закл Ярость берсерка
-
 #showtooltip [form:3]Боевая стойка; Стойка берсерка
-/cast [form:3] Боевая стойка; [form:1] Стойка берсерка;  [form:2,combat] Стойка берсерка; [form:2][ nocombat] Боевая стойка;
-/equip Канг Обезглавливатель
-
-#showtooltip Кровавое неистовство
-/закл Инстинкт смерти
-
-#showtooltip [nocombat] Рывок; [combat] Перехват
-/cast [nocombat] Боевая стойка; [combat] Стойка берсерка
-/cast [nocombat] Рывок; [combat] Перехват
+/cast [form:3] Боевая стойка; [form:1] Стойка берсерка; [form:2,combat] Стойка берсерка; [form:2][ nocombat] Боевая стойка;
 
 #showtooltip Разоружение
-/cast [form:1/3] Оборонительная стойка
-/equip [stance:1/2,noequipped:щит] Меч Омена
-/equip [stance:1/2,noequipped:щит] Черночерепный щит
-/cast [form:2] Разоружение
+/cast [stance:1/3] Оборонительная стойка
+/cast Разоружение
 
-#showtooltip [stance:1/3] Казнь; Кровопускание
-/cast  [stance:1/3] Казнь; Кровопускание
+#showtooltip  [stance:2] Реванш; Казнь
+/cast [stance:2] Реванш; Казнь
+/cast !Рассекающий удар
 
-#showtooltip Подрезать сухожилия
-/cast [combat] Стойка берсерка; [nocombat] Боевая стойка
-/cast [stance:1/3] Подрезать сухожилия;
-/equip [stance:2] Канг Обезглавливатель
+#show Провокация
+/cast [stance:1/3] Оборонительная стойка
+/cast Провокация
 
-#showtooltip Удар героя
-/startattack
-/cast Удар героя
+#showtooltip Подрезать сухожилия 
+/cast [combat] Стойка берсерка; [nocombat] Боевая стойка 
+/cast [stance:1/3] Подрезать сухожилия
+/cast [equipped:щит] Оборонительная стойка
 
-#showtooltip [equipped: shields] Удар щитом;  Зуботычина;
-/cast [equipped:Shields,stance:1/2] Удар щитом; [equipped:Shields] Оборонительная стойка; [stance:3] Зуботычина; Стойка берсерка
+#showtooltip [noequipped:щит] Зуботычина; Удар щитом
+/cast [noequipped:щит] Стойка берсерка; Оборонительная стойка
+/cast [noequipped:щит] Зуботычина; Удар щитом
+/cast [equipped:щит] Оборонительная стойка
+
+/закл Ни шагу назад
+/закл Безудержное восстановление
 
 #showtooltip Дразнящий удар
-/cast [stance:2/3] Боевая стойка
-/cast [stance:1] Дразнящий удар
-
-#showtooltip Смертельный удар
-/startattack
-/cast Смертельный удар
-
-#showtooltip Превосходство
-/cast [stance:3] Боевая стойка
-/cast [stance:1] Превосходство
+/cast [stance: 3] Оборонительная стойка
+/cast Дразнящий удар
 
 #showtooltip [form:2] Блок щитом; Оборонительная стойка;
 /cast [form:1/3] Оборонительная стойка
-/equip Меч Омена
-/equip Черночерепный щит
-/cast [form:2] Блок щитом
+/equip [noequipped:щит] Борейский стражник
+/equipslot 16 Наследие грома
+/cast [form:2,equipped:щит] Блок щитом
 
-#showtooltip [stance:3] Зуботычина; Удар щитом
-/cast [stance:3] Зуботычина; [stance:1/2,equipped:щит] Удар щитом
-/equip [stance:1/2,noequipped:щит] Черночерепный щит
-/equip [stance:1,equipped:щит] Канг Обезглавлавливатель
+#showtooltip Мощный удар щитом
+/startattack
+/cast Мощный удар щитом
 
-#showtooltip Отражение заклинания
-/cast [stance:1/2,equipped:щит] Отражение заклинания [stance:3] Оборонительная стойка
-/stopmacro [equipped: щит]
-/stopcasting
-/equip Одноручный топор
-/equip Осадный щит
+#showtooltip Вмешательство
+/cast [stance: 1/3] Оборонительная стойка
+/cast Вмешательство
 
-#showtooltip [form:3]Боевая стойка; Стойка берсерка
-/cast [form:3] Боевая стойка; [form:1] Стойка берсерка;  [form:2,combat] Стойка берсерка; [form:2][ nocombat] Боевая стойка;
+#showtooltip [equipped:щит] Сокрушение; Раскол брони
+/startattack
+/cast [equipped:щит] Сокрушение; Раскол брони
+/закл !Удар героя
 
-#showtooltip [stance:1] Возмездие; [stance:2] Глухая оборона
-/cast [stance:1] Возмездие; [stance:2] Глухая оборона
+#showtooltip [form:3] Вихрь;  Удар грома
+/cast [form:3] Вихрь; Удар грома
+/cast [equipped:щит] Оборонительная стойка
 
-/6 ------------------------------------------------
-/6 <В Черные Топи(ГЕР)> нид 1ДД(иду за ненужку)
-/6 ------------------------------------------------
-/3 <В Черные Топи(ГЕР)> нид 1ДД(иду за ненужку)
+#showtooltip [stance:1] Возмездие; [stance:2] Глухая оборона; [stance:3] Безрассудство
+/cast [stance:1] Возмездие; [stance:2] Глухая оборона; [stance:3] Безрассудство
+
+#showtooltip Победный раж
+/закл [stance:2,combat] Стойка берсерка;  [stance:2,nocombat] Боевая стойка
+/startattack
+/cast Победный раж
+
+#showtooltip [nocombat] Рывок; [combat] Перехват
+/cast [nocombat] Боевая стойка; [combat] Стойка берсерка 
+/cast [nocombat] Рывок; [combat] Перехват
